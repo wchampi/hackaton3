@@ -69,3 +69,7 @@ footer section ul li article p{
     text-align: left;
     font-size: 0.7em;
 }
+
+.none{
+    border: none;
+}
