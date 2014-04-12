@@ -6,6 +6,7 @@ footer{
     background-color: #000;
     bottom: 0;
     width: 100%;
+    z-index: 65535;
 }
 footer section {
     margin: 0 auto;
