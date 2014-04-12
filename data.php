@@ -16,8 +16,9 @@ $evento = DbManager::fetchOne($query);
 $response = array(
     'title' => $evento['nombre_evento'],
     'description' => $evento['resumen'],
-    'image' => $evento['link_image'],
-    'link' => $evento['link_youtube']
+    'image1' => $evento['link_image'],
+    'image2' => $evento['link_youtube'],
+    'link' => $evento['link']
 );
 
 echo json_encode($response);
