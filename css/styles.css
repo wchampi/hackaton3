@@ -1,0 +1,71 @@
+footer{
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 60px;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+}
+footer section {
+    margin: 0 auto;
+    padding: 0;
+    height: 60px;
+    background-color: red;
+}
+footer section ul{
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+    background-color: black;
+}
+footer section ul li{
+    margin: 0.5em auto;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+footer section ul li figure{
+    display: block;
+}
+
+footer section ul li figure img{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #EA8100;
+}
+
+footer section ul li figure figcaption{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 1em;
+    color: white;
+    vertical-align: middle;
+}
+footer section ul li article{
+    display: block;
+    vertical-align: top;
+}
+footer section ul li article h4{
+    margin: 0 auto;
+    padding: 0;
+    font-weight: bold;
+    color:#FFF;
+    text-align: left;
+    font-size: 0.9em;
+}
+footer section ul li article p{
+    margin: 0 auto;
+    padding: 0;
+    font-style: normal;
+    content: #f2f2f2;
+    text-align: left;
+    font-size: 0.7em;
+}
