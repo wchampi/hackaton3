@@ -32,6 +32,8 @@
 
 #culbanner section ul li figure{
     display: block;
+    padding: 0;
+    margin: 0;
 }
 
 #culbanner img {
@@ -44,7 +46,7 @@
     border-radius: 5px;
     display: inline-block;
     border: 1px solid #EA8100;
-    height: 60px;
+    height: 47px;
 }
 
 #culbanner section ul li figure figcaption{
