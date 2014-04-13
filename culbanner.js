@@ -1,11 +1,19 @@
 var jcB = null;
 var CulBanner={
     version:"1.0.0",
+    alpha: "0123456789ABCDEF",
+    genID:function(){
+		var id='';
+		for(var i=0; i < 32; i++){
+			id += this.alpha.charAt(Math.round(Math.random()*14));
+		}
+		return id;
+	},
     baseCss:"http://pre.bongous.com/hackaton3/css/styles.css",
     dataUrl:"http://pre.bongous.com/hackaton3/data.php",
     includeCss:function(css){
         var cssCb = document.createElement('link');
-        cssCb.href = this.baseCss;
+        cssCb.href = this.baseCss+"?"+this.genID();
         cssCb.type = 'text/css';
         cssCb.rel  = 'stylesheet';
         document.getElementsByTagName('head')[0].appendChild(cssCb);
