@@ -48,7 +48,7 @@ var CulBanner={
                 <ul>\
                     <li style='width:20%'>\
                         <figure>\
-                            <a href="+response.link+" target='_blank'><img border='0' src='"+response.image1+"' onerror=''/></a>\
+                            <a href="+response.link+" target='_blank'><img src='"+response.image1+"' onerror=''/></a>\
                         </figure>\
                     </li>\
                     <li  style='width:58%'>\
@@ -59,7 +59,7 @@ var CulBanner={
                     </li>\
                     <li style='width:20%'>\
                         <figure>\
-                            <a href="+response.link+" target='_blank'><img border='0' src='"+image2+"' onerror=''/></a>\
+                            <a href="+response.link+" target='_blank'><img src='"+image2+"' onerror=''/></a>\
                         </figure>\
                     </li>\
                 </ul>\
