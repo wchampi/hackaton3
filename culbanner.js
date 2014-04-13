@@ -9,8 +9,8 @@ var CulBanner = {
         }
         return id;
     },
-    baseCss: "http://pre.bongous.com/hackaton3/css/styles.css",
-    dataUrl: "http://pre.bongous.com/hackaton3/data.php",
+    baseCss: "http://culbanner.com/css/styles.css",
+    dataUrl: "http://culbanner.com/data.php",
     includeCss: function(css) {
         var cssCb = document.createElement('link');
         cssCb.href = this.baseCss + "?" + this.genID();
@@ -28,7 +28,7 @@ var CulBanner = {
         jcB = jQuery.noConflict(true);
         
         var js = document.createElement('script');
-        js.src = 'http://pre.bongous.com/hackaton3/js/jquery-ui.min.js' + "?" + CulBanner.genID();
+        js.src = 'http://culbanner.com/js/jquery-ui.min.js' + "?" + CulBanner.genID();
         js.onload = function () {
             CulBanner.loadBanner();
         };
@@ -59,7 +59,7 @@ var CulBanner = {
             console.log(image2);
             if (image2.indexOf('youtube') != -1) {
                 link2 = image2;
-                image2 = "http://pre.bongous.com/hackaton3/images/icono.png";
+                image2 = "http://culbanner.com/images/icono.png";
                 loadYoutube = 'onclick="CulBanner.loadYoutubeModal(\''+link2+'\');return false;"';
             }
 
