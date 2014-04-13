@@ -32,6 +32,12 @@
 
 #culbanner section ul li figure{
     display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#culbanner img {
+    border: 0;
 }
 
 #culbanner section ul li figure img{
@@ -54,12 +60,12 @@
 #culbanner section ul li article{
     display: block;
     vertical-align: top;
+    color:#FFF;
 }
 #culbanner section ul li article h4{
     margin: 0 auto;
     padding: 0;
     font-weight: bold;
-    color:#FFF;
     text-align: left;
     font-size: 0.9em;
 }
