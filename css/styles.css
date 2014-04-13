@@ -13,14 +13,14 @@
     margin: 0 auto;
     padding: 0;
     height: 60px;
-    background-color: red;
+    background-color: #000;
 }
 #culbanner section ul{
     margin: 0 auto;
     padding: 0;
     height: 100%;
     list-style-type: none;
-    background-color: #ff3333;
+    background-color: #000000;
 }
 #culbanner section ul li{
     margin: 0 auto;
