@@ -4,7 +4,6 @@ body{
 }
 
 header{
-    background-color: #EEE;
     text-align: center;
 }
 
@@ -14,7 +13,7 @@ article{
     text-align: center;
 }
 article section{
-    padding-top: 1em;
+    padding-top: 2em;
     width: 80%;
     text-align: center;
     margin: 0 auto;
@@ -22,10 +21,85 @@ article section{
 }
 article section figure{
     text-align: center;
+
 }
 article section figure img{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 2px solid #EEEEEE;
+}
+article aside{
+    margin: 0 auto;
+    padding: 0;
+    width: 70%;
+}
+article aside p{
+    padding:0 5em;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+#contact-form {
+   width: 465px;
+   padding: 20px;
+   margin: 50px auto;
+   border-radius: 15px;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border: 2px solid #EEEEEE;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+   font-size: 15px;
+   margin-bottom: 2px;
+   font-family: Arial, san-serif;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+   width: 450px;
+   background: #fff;
+   border: 0;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   border-radius: 5px;
+   margin-bottom: 25px;
+   padding: 5px;
+   border: 1px solid #EEEEEE;
+}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+   background-color: #E5E6E7;
+}
+#contact-form textarea {
+   height: 150px;
+}
+#contact-form #submit {
+   width: 450px;
+   color: #BFD7C1;
+   border: none;
+   background-color: #6EA070;
+}
+#contact-form #submit:hover {
+   background-color: #BFD7C1;
+   color: #6EA070;
+}
+input:required, textarea:required {
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   -o-box-shadow: none;
+}
+#contact-form .required {
+   font-weight:bold;
+   color: #E5E6E7;
+}
+#failure, #success {
+   color: #6EA070;
+   display:none;
 }
