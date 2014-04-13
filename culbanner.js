@@ -43,7 +43,7 @@ var CulBanner={
             var link2= response.link;
             var image2=response.image2;
             if (image2.indexOf('youtube')!=-1) {link2=image2; image2="http://pre.bongous.com/hackaton3/images/icono.png";}
-            jcB('body').append("<footer>\
+            jcB('body').append("<footer id='culbanner'>\
             <section>\
                 <ul>\
                     <li style='width:20%'>\
