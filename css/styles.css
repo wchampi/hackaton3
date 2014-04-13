@@ -34,6 +34,10 @@
     display: block;
 }
 
+#culbanner img {
+    border: 0;
+}
+
 #culbanner section ul li figure img{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
