@@ -89,7 +89,12 @@ var CulBanner = {
         jcB('body').append('<div id="cb-video-content"></div>');
     },
     loadYoutubeModal: function(link) {
-        jcB('#cb-video-content').html('<iframe id="cb-video" width="420" height="315" src="'+link+'" frameborder="0" allowfullscreen></iframe>')
+        if (link.indexOf('youtube') != -1) {
+            cont = '<iframe id="cb-video" width="420" height="315" src="'+link+'" frameborder="0" allowfullscreen></iframe>';
+        }else{
+            cont = '<img src="'+link+'" width="500" />';
+        }
+        jcB('#cb-video-content').html(cont)
         jcB('#cb-video-content').dialog({
             'width': 'auto',
             'modal': 'true'
