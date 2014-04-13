@@ -1,0 +1,31 @@
+body{
+    background-color: #FDFDFD;
+    font-size: 16px;
+}
+
+header{
+    background-color: #EEE;
+    text-align: center;
+}
+
+article{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+article section{
+    padding-top: 1em;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+article section figure{
+    text-align: center;
+}
+article section figure img{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #EEEEEE;
+}
