@@ -13,7 +13,7 @@ var CulBanner={
     dataUrl:"http://pre.bongous.com/hackaton3/data.php",
     includeCss:function(css){
         var cssCb = document.createElement('link');
-        cssCb.href = this.baseCss+"?"+this.genID();
+        cssCb.href = css+"?"+this.genID();
         cssCb.type = 'text/css';
         cssCb.rel  = 'stylesheet';
         document.getElementsByTagName('head')[0].appendChild(cssCb);
@@ -23,11 +23,16 @@ var CulBanner={
       CulBanner.loadBanner();  
     },
     init:function(){
-        this.includeCss(this.cssBase);
+        this.includeCss(this.baseCss);
+        this.includeCss("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css");
         var js = document.createElement('script');
         js.onload = this.iniJq;
         js.src = '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js';
-        document.getElementsByTagName('head')[0].appendChild(js);        
+        document.getElementsByTagName('head')[0].appendChild(js);  
+        var js2 = document.createElement('script');
+        js2.src = '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js';
+        document.getElementsByTagName('head')[0].appendChild(js2);  
+        
     },
     loadBanner:function(){
         var data = {};
@@ -48,7 +53,7 @@ var CulBanner={
                 <ul>\
                     <li style='width:20%'>\
                         <figure>\
-                            <a href="+response.link+" target='_blank'><img src='"+response.image1+"' onerror=''/></a>\
+                            <a href="+response.link+" target='_blank'><img src='"+response.image1+"' onerror='http://www.publicatufoto.com/data/media/44/Municipalidad_de_Lima.PNG'/></a>\
                         </figure>\
                     </li>\
                     <li  style='width:58%'>\
@@ -59,7 +64,7 @@ var CulBanner={
                     </li>\
                     <li style='width:20%'>\
                         <figure>\
-                            <a href="+response.link+" target='_blank'><img src='"+image2+"' onerror=''/></a>\
+                            <a href="+link2+" target='_blank'><img src='"+image2+"' onerror='http://www.publicatufoto.com/data/media/44/Municipalidad_de_Lima.PNG'/></a>\
                         </figure>\
                     </li>\
                 </ul>\
