@@ -1,4 +1,35 @@
-footer{
+body{
+    background-color: #FDFDFD;
+    font-size: 16px;
+}
+
+header{
+    background-color: #EEE;
+    text-align: center;
+}
+
+article{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+article section{
+    padding-top: 1em;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+article section figure{
+    text-align: center;
+}
+article section figure img{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #EEEEEE;
+}
+#culbanner{
     position: fixed;
     margin: 0 auto;
     padding: 0;
@@ -8,20 +39,20 @@ footer{
     width: 100%;
     z-index: 65535;
 }
-footer section {
+#culbanner section {
     margin: 0 auto;
     padding: 0;
     height: 60px;
     background-color: red;
 }
-footer section ul{
+#culbanner section ul{
     margin: 0 auto;
     padding: 0;
     height: 100%;
     list-style-type: none;
     background-color: black;
 }
-footer section ul li{
+#culbanner section ul li{
     margin: 0.5em auto;
     padding: 0;
     display: inline-block;
@@ -29,11 +60,11 @@ footer section ul li{
     vertical-align: top;
 }
 
-footer section ul li figure{
+#culbanner section ul li figure{
     display: block;
 }
 
-footer section ul li figure img{
+#culbanner section ul li figure img{
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -41,7 +72,7 @@ footer section ul li figure img{
     border: 1px solid #EA8100;
 }
 
-footer section ul li figure figcaption{
+#culbanner section ul li figure figcaption{
     text-align: center;
     font-size: 12px;
     font-weight: bold;
@@ -50,11 +81,11 @@ footer section ul li figure figcaption{
     color: white;
     vertical-align: middle;
 }
-footer section ul li article{
+#culbanner section ul li article{
     display: block;
     vertical-align: top;
 }
-footer section ul li article h4{
+#culbanner section ul li article h4{
     margin: 0 auto;
     padding: 0;
     font-weight: bold;
@@ -62,7 +93,7 @@ footer section ul li article h4{
     text-align: left;
     font-size: 0.9em;
 }
-footer section ul li article p{
+#culbanner section ul li article p{
     margin: 0 auto;
     padding: 0;
     font-style: normal;
