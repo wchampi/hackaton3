@@ -26,6 +26,9 @@
 
         <article id="content">
             <section>
+                <div>
+                    <img src="images/slogan_culbanner.png" /><br/><br/>
+                </div>
                 <figure>
                     <div style="margin: 0 auto; width: 600px;">
                         <div class="slider-wrapper">
@@ -85,13 +88,32 @@
         </article>
         <br/><br/><br/><br/>
    <script type="text/javascript">
+    var jcB = null;
+    jcB = jQuery.noConflict(true);
     $(document).ready(function() {
         var slider = $('#slider').leanSlider({
             directionNav: '#slider-direction-nav',
             controlNav: '#slider-control-nav'
         });
     });
-    </script>        
-<script src="http://culbanner.com/culbannerLoader.js?kgj" type="text/javascript"></script>        
+    function loadYoutubeModal(link) {
+        if (link.indexOf('youtube') != -1) {
+            cont = '<iframe id="cb-video" width="420" height="315" src="'+link+'" frameborder="0" allowfullscreen></iframe>';
+        }else{
+            cont = '<img src="'+link+'" width="500" />';
+        }
+        jcB('#cb-video-content').html(cont)
+        jcB('#cb-video-content').dialog({
+            'width': 'auto',
+            'modal': 'true'
+        });
+    }
+    </script>  
+    <div style="position:relative;">
+    <img src="images/banner_footer.jpg">
+    <div style="position:absolute;top:10px;left:1300px;">
+        <a onclick="loadYoutubeModal('//www.youtube.com/watch?v=VIvX21dAFwU');return false;" target="_blank" href="http://www.youtube.com/watch?v=VIvX21dAFwU"><img src="images/boton_youtube.png"/></a>
+    </div>
+    </div>    
     </body>
 </html>
