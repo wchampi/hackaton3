@@ -1,5 +1,5 @@
 <?php
-
+define("APPLICATION_ENV","production");
 defined('APPLICATION_ENV')
     || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
 
